@@ -76,7 +76,7 @@ SELECT *
 FROM payment
 WHERE amount BETWEEN 3 AND 8; -- does the same thing AS example above, MORE simplified
 
--- Order our rows of data by usin the ORDER BY clause (default to ascending)
+-- Order our rows of data by using the ORDER BY clause (default to ascending)
 SELECT *
 FROM payment
 WHERE amount BETWEEN 3 AND 8
@@ -132,7 +132,7 @@ SELECT amount, COUNT(*), SUM(amount)
 FROM payment
 GROUP BY amount;
 
--- Query the payment table to display the customer who have spent the most (aka order by sum(amount)
+-- Query the payment table to display the customers who have spent the most (aka order by sum(amount))
 SELECT customer_id, SUM(amount)
 FROM payment
 GROUP BY customer_id
@@ -167,7 +167,7 @@ FROM film
 ORDER BY title
 OFFSET 5;
 
--- e.g. DISPLAY customers 10-15 in terms of most spent under 40 total payments
+-- e.g. DISPLAY customers 11-15 
 SELECT *
 FROM film 
 ORDER BY title 
